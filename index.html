@@ -253,7 +253,7 @@
                         <!-- Text Container -->
                         <div class="text-container text-end">
                             <h2>Diseño web y desarrollo </h2>
-                            
+
                             <h5>HERRAMIENTAS DE DISEÑO</h5>
                             <p>
                                 Trabajo principalmente con Figma, Photoshop e Illustrator para crear experiencias
@@ -438,45 +438,52 @@
     </div> <!-- end of container -->
     <!-- end of section divider -->
 
-    <!-- Contact -->
+    <!-- Contacto -->
     <div id="contact" class="form-1 bg-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h2>Contact details</h2>
-                    <p class="p-heading">For any type of online project please don't hesitate to get in touch with me.
-                        The fastest way is to send me your message using the following email <a class="blue no-line"
-                            href="#your-link">dianamontero45@gmail.com</a></p>
+                    <h2>Datos de contacto</h2>
+                    <p class="p-heading">No dudes en ponerte en contacto
+                        conmigo.
+                        La forma más rápida es enviarme un mensaje al siguiente correo <a class="blue no-line"
+                            href="mailto:dianamontero45@gmail.com">dianamontero45@gmail.com</a></p>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
                 <div class="col-lg-12">
 
-                    <!-- Contact Form -->
-                    <form id="contactForm">
+                    <!-- Formulario de Contacto -->
+                    <form name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                        <input type="hidden" name="form-name" value="contacto">
+                        <p style="display:none">
+                            <label>No llenar si eres un robot: <input name="bot-field" /></label>
+                        </p>
+
                         <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
-                            <label class="label-control" for="cname">Name</label>
+                            <input type="text" class="form-control-input" id="cname" name="nombre" required>
+                            <label class="label-control" for="cname">Nombre</label>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
-                            <label class="label-control" for="cemail">Email</label>
+                            <input type="email" class="form-control-input" id="cemail" name="correo" required>
+                            <label class="label-control" for="cemail">Correo electrónico</label>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                            <label class="label-control" for="cmessage">Project details</label>
+                            <textarea class="form-control-textarea" id="cmessage" name="mensaje" required></textarea>
+                            <label class="label-control" for="cmessage">Detalles del proyecto</label>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">Submit</button>
+                            <button type="submit" class="form-control-submit-button">Enviar</button>
                         </div>
                     </form>
-                    <!-- end of contact form -->
+                    <!-- Fin del formulario de contacto -->
 
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of form-1 -->
-    <!-- end of contact -->
+    <!-- Fin de contacto -->
+
 
 
     <!-- Copyright -->
