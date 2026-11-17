@@ -171,3 +171,18 @@ html{scroll-behavior:smooth}
 .scroll-top.is-visible{opacity:1;visibility:visible;transform:none}
 .scroll-top:hover{background:var(--navy-deep)}
 .scroll-top:focus-visible{outline:3px solid var(--sky);outline-offset:2px}
+
+/* ===== Header / navegación ===== */
+section[id],header[id]{scroll-margin-top:72px}
+.site-nav{background:#fff;border-bottom:1px solid rgba(10,26,51,.12);padding:.6rem 0;z-index:1020}
+.site-nav__inner{padding-left:var(--pad-x);padding-right:var(--pad-x)}
+.site-nav__brand{font-family:var(--font-title);font-weight:700;font-size:1.4rem;letter-spacing:-.02em;color:var(--navy)}
+.site-nav__brand:hover{color:var(--navy-deep)}
+.site-nav .nav-link{font-size:18px;color:var(--ink);padding:.5rem 0}
+.site-nav .nav-link:hover,.site-nav .nav-link:focus-visible{color:var(--navy);text-decoration:underline;text-underline-offset:.35em}
+.site-nav__toggler{border-color:var(--navy)}
+.site-nav__toggler:focus{box-shadow:0 0 0 .2rem var(--sky)}
+@media (max-width:991.98px){.site-nav__list{padding:.75rem 0 .5rem}}
+@media (min-width:992px){.site-nav__list{gap:1.75rem}.site-nav .nav-link{padding:.5rem 0}}
+/* El logo ahora vive en la barra; el hero centra su contenido */
+@media (min-width:768px){.hero__left{justify-content:center}.hero__copy{margin-bottom:0;padding-top:0}}
